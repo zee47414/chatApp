@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+html{
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #040714;
+  color: #f9f9f9;
+  font-family: Avenir-Roman,sans-serif;
+  padding: 0;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outer-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.message-input{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 20vh;
+  margin-left: 5%;
+  background-color: #040714;
+  width: 100%;
+  margin-right: 5%;
+  z-index: 1;
+  position: fixed;
+  top: 80%;
+}
+.chat-input{
+  width: 80%;
+  height: 8vh;
+  margin-top: 8vh;
+  border-radius: 15px;
+  font-size: large;
+}
+.send-btn{
+  width: 10%;
+  height : 8vh;
+  border-radius: 15px;
+}
+
+.messages-container{
+  position: relative;
+  top: 0px;
+  height: 80%;
+  padding-bottom: 20vh; /* height of the input chat box */
+}
+.msg{
+ height: 15vh;
+ position: relative;
+ width: 80%;
+ margin-left: 2%;
+}
+.user-img img{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+}
+.user-name {
+  position: absolute;
+  top: 8px;
+  font-size: small;
+  font-weight: 500;
+  left: 55px;
+}
+.time{
+  position: absolute;
+  top: 8px;
+  font-size: small;
+  left: 15%;
+}
+.user-msg{
+   width: 40%;
+   height: 10vh;
+   background-color:#ffffff;
+   border-radius: 0px 12px 12px 12px;
+   color: #040714;
+   position: absolute;
+   left : 5%;
+   top: 28%;
+   padding-right: 10px;
+   padding: 5px;
+}
+.like{
+  position: absolute;
+  left: 42%;
+  top: 48%;
+  color: #040714;
+}
+.like img{
+width: 18px;
+height: 18px;
+}
+.emoji-btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  border-style: none;
+  left: -2.5%;
+  top:  49%;
+  background-color: white;
+}
+.emoji-btn img{
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  top: 2px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 20px;
+  height: 20px;
+  overflow: cover;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.emoji-picker {
+  position: relative; 
+  bottom: 400px; 
+  right: 5%; 
+  z-index: 2; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
